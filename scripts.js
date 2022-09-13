@@ -1,4 +1,4 @@
-const btn = document.getElementById('btn-1');
+const btn = document.querySelector('#btn-1');
 
 btn.addEventListener('click', () => {
     //process form here
@@ -8,17 +8,12 @@ btn.addEventListener('click', () => {
     console.log(firstTextInput.value);
 
     //color input
-    // const colorInput = document.querySelector('#color-input');
-
-    // COLOR INPUT NOT WORKING
-    const colorInput = document.getElementById('color-input');
-    console.log(document.getElementById('color-input').value);
-    console.log('here', colorInput.value);
+    const colorInput = document.querySelector('#color-input');
     const form = document.querySelector('form');
     form.style.backgroundColor = colorInput.value;
 
-    //checkboxes input
-    // const checkboxesElement = document.querySelector('#checkboxes');
-    // const checkboxes = checkboxesElement.querySelectorAll('input');
+    // checkboxes input
+    const checkboxesElement = document.querySelector('#checkboxes');
+    const checkboxes = checkboxesElement.querySelectorAll('input');
 
 })
