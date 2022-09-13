@@ -3,9 +3,59 @@
     <head>
         <title>FWD Assignment 2</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="main.css">
         <script defer src="scripts.js"></script>
     </head>
 
+    <body>
+        <h1>Let's make a website</h1>
+        <form>
+            <fieldset>
+                <label for="first-text-input">Enter Website Title:</label>
+                <input id="first-text-input" type="text">
+            </fieldset>
+            <fieldset>
+                <label for="email-input">Enter Email:</label>
+                <input id="email-input" type="email">
+            </fieldset>
+            <fieldset>
+                <label id="color-input">Select Background Color: </label>
+                <input id="color-input" type="color">
+            </fieldset>
+            <fieldset>
+                <legend>Checkbox Group</legend>
 
+                <input type="checkbox" id="check-1" name="checkbox-group">
+                <label for="check-1">Option 1</label>
+
+                <input type="checkbox" id="check-2" name="checkbox-group">
+                <label for="check-2">Option 2</label>
+
+                <input type="checkbox" id="check-3" name="checkbox-group">
+                <label for="check-3">Option 3</label>
+
+                <input type="checkbox" id="check-4" name="checkbox-group">
+                <label for="check-4">Option 4</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favorite Ice Cream Flavor</legend>
+
+                <input type="radio" id="vanilla" name="icecream">
+                <label for="vanilla">Vanilla</label>
+
+                <input type="radio" id="chocolate" name="icecream">
+                <label for="chocolate">Chocolate</label>
+
+                <input type="radio" id="strawberry" name="icecream">
+                <label for="strawberry">Strawberry</label>
+
+                <input type="radio" id="mint" name="icecream">
+                <label for="mint">Mint</label>
+            </fieldset>
+
+            <button type="button" id="btn-1">Button Text Here</button>
+
+        </form>
+    </body>
 </html>
