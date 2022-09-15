@@ -68,4 +68,30 @@ btn.addEventListener('click', () => {
         messageSpace.innerHTML = messageInput.value;
     }
 
+    form.style.visibility = 'hidden'; 
+
+    const btn2 = document.querySelector('#btn-2');
+    btn2.style.visibility = 'visible';
+
+})
+
+const btn2 = document.querySelector('#btn-2');
+
+btn2.addEventListener('click', () => {
+    console.log("inside here");
+    const form = document.querySelector('form');
+    form.reset(); 
+    form.style.visibility = "visible";  
+    
+    document.body.style.backgroundColor = '#FFFFFF';
+    const messageSpace = document.getElementById('cool-message');
+    const coolerLogo = document.getElementById('cool-logo');
+    const title = document.querySelector('#website-title');
+
+    messageSpace.innerHTML = "";
+    coolerLogo.innerHTML = "";
+    title.innerHTML = "Let's make a website";
+
+    btn2.style.visibility = 'hidden';
+
 })
