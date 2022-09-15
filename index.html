@@ -8,21 +8,20 @@
     </head>
 
     <body>
-        <h1>Let's make a website</h1>
+        <h1 id="website-title">Let's make a website</h1>
+        <h1 id="cool-logo"></h1>
+        <p id="cool-message"></p>
         <form>
             <fieldset>
                 <label for="first-text-input">Enter Website Title:</label>
                 <input id="first-text-input" type="text">
             </fieldset>
             <fieldset>
-                <label for="email-input">Enter Email:</label>
-                <input id="email-input" type="email">
-            </fieldset>
-            <fieldset>
                 <label for="color-input">Select Background Color: </label>
-                <input type="color" id="color-input">
+                <input type="color" id="color-input" value="#ffffff">
             </fieldset>
-            <fieldset>
+
+            <!-- <fieldset>
                 <legend>Checkbox Group</legend>
 
                 <input type="checkbox" id="check-1" name="checkbox-group">
@@ -36,25 +35,31 @@
 
                 <input type="checkbox" id="check-4" name="checkbox-group">
                 <label for="check-4">Option 4</label>
+            </fieldset> -->
+
+            <fieldset>
+                <legend>Choose a Logo</legend>
+
+                <input type="radio" id="circle" name="logo">
+                <label for="circle">Circle</label>
+
+                <input type="radio" id="square" name="logo">
+                <label for="square">Square</label>
+
+                <input type="radio" id="star" name="logo">
+                <label for="star">Star</label>
+
+                <input type="radio" id="heart" name="logo">
+                <label for="heart">Heart</label>
             </fieldset>
 
             <fieldset>
-                <legend>Favorite Ice Cream Flavor</legend>
+                <legend>Write a Message</legend>
 
-                <input type="radio" id="vanilla" name="icecream">
-                <label for="vanilla">Vanilla</label>
-
-                <input type="radio" id="chocolate" name="icecream">
-                <label for="chocolate">Chocolate</label>
-
-                <input type="radio" id="strawberry" name="icecream">
-                <label for="strawberry">Strawberry</label>
-
-                <input type="radio" id="mint" name="icecream">
-                <label for="mint">Mint</label>
+                <textarea id="message" rows="4" cols="50" placeholder="Enter message here... "></textarea>
             </fieldset>
 
-            <button type="button" id="btn-1">Button Text Here</button>
+            <button type="button" id="btn-1">Submit</button>
 
         </form>
     </body>

@@ -5,15 +5,67 @@ btn.addEventListener('click', () => {
 
     //text input
     const firstTextInput = document.getElementById('first-text-input');
-    console.log(firstTextInput.value);
+    const title = document.querySelector('#website-title');
+    console.log("here", firstTextInput.value);
+    if(firstTextInput.value === ""){
+        console.log("in here");
+        title.innerHTML = "no title input";
+    }
+    else{
+        title.innerHTML = firstTextInput.value;
+    }
+
 
     //color input
     const colorInput = document.querySelector('#color-input');
     const form = document.querySelector('form');
-    form.style.backgroundColor = colorInput.value;
+    document.body.style.backgroundColor = colorInput.value;
 
-    // checkboxes input
-    const checkboxesElement = document.querySelector('#checkboxes');
-    const checkboxes = checkboxesElement.querySelectorAll('input');
+    // radio input
+    let selectedShape;
+    const radioButtons = document.querySelectorAll('input[name="logo"]');
+
+    radioButtons.forEach((item) => {
+        if(item.checked === true){
+            selectedShape=item.id;
+        }
+    })
+
+    console.log(selectedShape);
+    const coolerLogo = document.getElementById('cool-logo');
+
+    if(selectedShape === document.getElementById('circle').id){
+        coolerLogo.innerHTML = "●";
+
+    }
+    else if(selectedShape === document.getElementById('square').id){
+        coolerLogo.innerHTML = "■";
+
+    }
+    else if(selectedShape === document.getElementById('star').id){
+        coolerLogo.innerHTML = "✭";
+        
+    }
+    else if(selectedShape === document.getElementById('heart').id){
+        coolerLogo.innerHTML = "♥";
+        
+    }
+    else{
+        coolerLogo.innerHTML = "no logo selected";
+
+    }
+
+    //textarea input
+    const messageInput = document.getElementById('message');
+    const messageSpace = document.getElementById('cool-message');
+
+    console.log(messageInput.value);
+
+    if(messageInput.value === ""){
+        messageSpace.innerHTML = "No message entered";
+    }
+    else{
+        messageSpace.innerHTML = messageInput.value;
+    }
 
 })
